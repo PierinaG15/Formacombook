@@ -1,0 +1,139 @@
+/*{
+    border:1px solid black;
+}
+    */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+  width: 50px;
+  height: 50px;  
+}
+h1{
+    font-size: 15px;
+}
+article{
+    width: 30%;
+}
+article img{
+    width: 100%;
+   
+}
+#seccionFotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contenedorImg{
+    height: 290px;
+    overflow: hidden;
+} 
+ 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+#seccionFotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+/* Artículos y contenedores de imagen */
+article {
+    width: 30%; /* Esto da un 30% del espacio al artículo */
+    margin-bottom: 20px;
+}
+
+article img {
+    width: 100%;  /* Hace que las imágenes ocupen todo el ancho de su contenedor */
+    height: auto;
+}
+
+.contenedorImg {
+    height: 290px;
+    overflow: hidden;  /* Evita que la imagen se desborde */
+}
+
+/* Estilo del corazón y contador */
+article i {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+article span {
+    font-size: 20px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos Responsivos */
+
+/* Para pantallas grandes */
+@media (min-width: 1024px) {
+    article {
+        width: 30%; /* Tres artículos en la fila */
+    }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    article {
+        width: 45%; /* Dos artículos en la fila */
+    }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    article {
+        width: 100%;  /* Un solo artículo por fila */
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 16px; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+
+    #logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Para pantallas muy pequeñas (por ejemplo, dispositivos móviles muy pequeños) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 14px;  /* Reduce aún más el tamaño del título */
+    }
+
+    #logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    article span {
+        font-size: 18px;  /* Hace que los números sean más pequeños en pantallas pequeñas */
+    }
+}
